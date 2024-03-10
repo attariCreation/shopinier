@@ -168,7 +168,7 @@ nav#nav1 #nav1-right {
     justify-content: space-between;
     align-items: center;
 
-    padding: 1rem;
+    padding: 1rem 1.5rem;
 
     background-color: white;
 }
@@ -189,26 +189,59 @@ nav#nav1 #nav1-right {
     font-family: 'montserrat';
     font-size: 14px;
     font-weight: 500;
+
+    transition: all 100ms;
 }
-#left a#realtive{
 
+#nav2 #left a:hover {
+    color: var(--clr-accent-blue);
+}
 
+#left #relative {
+
+    display: inline;
+    position: relative;
+
+}
+#relative:hover #abso
+{
+    display: block;
 }
 #left #abso {
+    
+
+    top: 20px;
+    right: 0;
+    background-color: white;
+    border: 1px solid gray;
 
     position: absolute;
+    text-align: left;
+
     display: none;
+
+
+    
 }
-
-
-#nav2 #right{
+#abso a{
+    font-size: 14px;
+    margin: 0;
+    padding: 5px;
+    display: block;
+    
+    color: rgb(30, 63, 255);
+}
+#abso a:hover{
+    background-color: rgba(211, 211, 211, 0.37);
+}
+#nav2 #right {
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#right>a{
+#right>a {
 
     text-decoration: none;
     color: white;
@@ -220,7 +253,7 @@ nav#nav1 #nav1-right {
     margin-right: 10px;
 }
 
-#right p{
+#right p {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,14 +261,20 @@ nav#nav1 #nav1-right {
     font-family: 'montserrat';
     font-size: 14px;
 
-font-weight: 500;
+    font-weight: 500;
 
 
 }
 
-p a{
+p a {
 
     text-decoration: none;
     color: inherit;
     font-weight: 600;
+
+    transition: all 100ms;
+}
+
+p a:hover {
+    color: rgb(30, 63, 255);
 }
